@@ -296,7 +296,7 @@
     }
 
     h1 {
-        width: 85%;
+        width: 85vw;
         font-size: 62px;
         height: 140px;
         margin-bottom: 5px;
@@ -395,5 +395,72 @@
         margin-bottom: 1cm;
     }
 
-}
+    .info {
+        background-image: url(assets_/imagem-fundo-info.png); alt:"fundo";
+        height: 555px;
+    }
 
+    .container-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+    }
+
+    .local-info {
+        margin-top: 37px;
+    }
+
+    .endereco {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 800px;
+        position: unset;
+    }
+
+    .endereco h2 {
+        color: #FFAF00;
+        font-weight: 500;
+        font-size: 64px;
+        width: 47%;
+        z-index: 1000;
+        margin: 40px 0 30px;
+    }
+
+    .box-endereco {
+        width: 85vw;
+        height: 85vw;
+        background-color: #010010;
+        border: 2px solid #A259F7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .endereco p {
+        color: #A259F7;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 400;
+        font-size: 29px;
+        width: 90%;
+        margin: 0 0;
+    }
+
+    .endereco img {
+        position: unset;
+        margin: 50px 0 100px;
+        z-index: 100;
+        width: 85vw;
+    }
+
+    .mapa {
+        margin: 0 0;
+    }
+
+    footer span {
+        font-size: 120%;
+        width: 70%;
+        text-align: center;
+    }
+}
