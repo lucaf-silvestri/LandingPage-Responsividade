@@ -6,14 +6,11 @@
     box-sizing: border-box;
     }
 
-
     .menu-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 590px;
-        z-index: 99;
-        margin-right: 2cm;
     }
 
     .menu-header a {
@@ -22,8 +19,6 @@
         text-transform: uppercase;
         font-family: 'Bebas Neue', cursive;
         font-size: 18px;
-        margin-right: 2cm;
-        z-index: 99;
     }
 
     header {
@@ -36,6 +31,13 @@
         z-index: 99;
     }
 
+    .btn-menu i {
+        display: none;
+        color: white;
+        font-size: 30px;
+    }
+
+
     .container {
         margin-left: 2cm;
         margin-right: 2cm;
@@ -45,8 +47,6 @@
         display: flex;
         justify-content: flex-end;
         height: 100%;
-        width: 100%;
-        z-index: 99;
     }
 
     .container-banner {
@@ -74,6 +74,7 @@
 
     .imagem-fundo {
         width: 100%;
+        object-fit: cover;
         margin-top: 60px;
     }
 
@@ -265,6 +266,40 @@
 
     @media (max-width: 420px) {
 
+    .container {
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+
+    .container-header {
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+        align-items: center;
+    }
+    
+    .menu-header {
+        display: none;
+        background-color: black;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        align-items: unset;
+        height: 300px;
+        top: 60px;
+        justify-content: space-evenly;
+        padding-left: 10vw;
+    }
+
+    .menu-header a {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 18px;
+    }
+
     header {
         background-color: #F9003D;
         height: 60px;
@@ -275,24 +310,23 @@
         z-index: 99;
     }
 
-    .menu-header a {
-        color: #F9003D;
-    }
 
-    header {
-        background-color: #F9003D;
-        z-index: 5;
-    }
 
+    .btn-menu i {
+        display: inline-block;
+        color: white;
+        font-size: 30px;
+    }
+    
     .container-banner {
         display: flex;
         justify-content: center;
         height: 550px;
     }
-    
+        
     .imagem-fundo {
         height: 100%;
-        width: auto;
+        width: 100vw;
     }
 
     h1 {
@@ -463,4 +497,5 @@
         width: 70%;
         text-align: center;
     }
+
 }

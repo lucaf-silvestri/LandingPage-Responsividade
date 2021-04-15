@@ -6,18 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <script src="https://kit.fontawesome.com/6a2fc0563c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Responsividade - CSS.css">
 </head>
 
 <body>
     <header>
         <div class="container container-header">
-            <nav class="menu-header">
-                <a href="#">Inicio</a>
-                <a href="#">Sobre</a>
-                <a href="#">Desafios</a>
-                <a href="#">Endereço</a>
+            <nav id="links" class="menu-header">
+                <a href="#">Início</a>
+                <a href="#sobre-titulo">Sobre</a>
+                <a href="#container-info">Desafios</a>
+                <a href="#endereco">Endereço</a>
+                <a href="#" onclick="botaodomenu ()">Fechar</a>
             </nav>
+            <a class="btn-menu" href="#" onclick="botaodomenu ()">
+                <i class="fas fa-bars"></i>
+            </a>
         </div>
     </header>
 
@@ -95,6 +100,20 @@
     <footer>
         <span>Copyright © 2020 - Escola Senai de Informática</span>
     </footer>
+
+    <script>
+        function botaodomenu () {
+            var menu = document.getElementById("links");
+            if (menu.style.display === "flex") {
+                // Esconda o menu
+                menu.style.display = "none";
+
+            }else {
+                // Mostre o menu
+                menu.style.display = "flex";
+            }
+        }
+    </script>
 </body>
 
 </html>
